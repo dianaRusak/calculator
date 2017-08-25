@@ -1,0 +1,306 @@
+object Form1: TForm1
+  Left = 336
+  Height = 302
+  Top = 128
+  Width = 216
+  Caption = 'Обычный'
+  ClientHeight = 282
+  ClientWidth = 216
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  LCLVersion = '1.6.4.0'
+  object Edit1: TEdit
+    Left = 8
+    Height = 23
+    Top = 8
+    Width = 192
+    OnChange = Edit1Change
+    OnKeyPress = Edit1KeyPress
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 8
+    Height = 32
+    Top = 40
+    Width = 32
+    Caption = 'MC'
+    OnClick = ButtonMemory
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 48
+    Height = 32
+    Top = 40
+    Width = 32
+    Caption = 'MR'
+    OnClick = ButtonMemory
+    TabOrder = 2
+  end
+  object Button3: TButton
+    Left = 88
+    Height = 32
+    Top = 40
+    Width = 32
+    Caption = 'MS'
+    OnClick = ButtonMemory
+    TabOrder = 3
+  end
+  object Button4: TButton
+    Left = 128
+    Height = 32
+    Top = 40
+    Width = 32
+    Caption = 'M+'
+    OnClick = ButtonMemory
+    TabOrder = 4
+  end
+  object Button5: TButton
+    Left = 168
+    Height = 32
+    Top = 40
+    Width = 32
+    Caption = 'M-'
+    OnClick = ButtonMemory
+    TabOrder = 5
+  end
+  object Button6: TButton
+    Left = 8
+    Height = 32
+    Top = 80
+    Width = 72
+    Caption = '←'
+    OnClick = Button6Click
+    OnKeyPress = Button7KeyPress
+    TabOrder = 6
+  end
+  object Button7: TButton
+    Left = 88
+    Height = 32
+    Top = 80
+    Width = 32
+    Caption = 'C'
+    OnClick = Button26Click
+    TabOrder = 7
+  end
+  object Button8: TButton
+    Left = 128
+    Height = 32
+    Top = 80
+    Width = 32
+    Caption = '±'
+    OnClick = Button26Click
+    TabOrder = 8
+  end
+  object Button9: TButton
+    Left = 168
+    Height = 32
+    Top = 80
+    Width = 32
+    Caption = '√'
+    OnClick = Button17Click
+    TabOrder = 9
+  end
+  object Button10: TButton
+    Left = 8
+    Height = 32
+    Top = 120
+    Width = 32
+    Caption = '7'
+    OnClick = Button0Click9
+    OnKeyPress = Button7KeyPress
+    TabOrder = 10
+  end
+  object Button11: TButton
+    Left = 48
+    Height = 32
+    Top = 120
+    Width = 32
+    Caption = '8'
+    OnClick = Button0Click9
+    OnKeyPress = Button7KeyPress
+    TabOrder = 11
+  end
+  object Button12: TButton
+    Left = 88
+    Height = 32
+    Top = 120
+    Width = 32
+    Caption = '9'
+    OnClick = Button0Click9
+    OnKeyPress = Button7KeyPress
+    TabOrder = 12
+  end
+  object Button13: TButton
+    Left = 8
+    Height = 32
+    Top = 160
+    Width = 32
+    Caption = '4'
+    OnClick = Button0Click9
+    OnKeyPress = Button7KeyPress
+    TabOrder = 13
+  end
+  object Button14: TButton
+    Left = 48
+    Height = 32
+    Top = 160
+    Width = 32
+    Caption = '5'
+    OnClick = Button0Click9
+    OnKeyPress = Button7KeyPress
+    TabOrder = 14
+  end
+  object Button15: TButton
+    Left = 88
+    Height = 32
+    Top = 160
+    Width = 32
+    Caption = '6'
+    OnClick = Button0Click9
+    OnKeyPress = Button7KeyPress
+    TabOrder = 15
+  end
+  object Button16: TButton
+    Left = 128
+    Height = 32
+    Top = 120
+    Width = 32
+    Caption = '/'
+    OnClick = Button27Click
+    OnKeyPress = Button7KeyPress
+    TabOrder = 16
+  end
+  object Button17: TButton
+    Left = 168
+    Height = 32
+    Top = 120
+    Width = 32
+    Caption = '%'
+    OnClick = Button17Click
+    TabOrder = 17
+  end
+  object Button18: TButton
+    Left = 128
+    Height = 32
+    Top = 160
+    Width = 32
+    Caption = '*'
+    OnClick = Button27Click
+    OnKeyPress = Button7KeyPress
+    TabOrder = 18
+  end
+  object Button19: TButton
+    Left = 168
+    Height = 32
+    Top = 160
+    Width = 32
+    Caption = '1/x'
+    OnClick = Button17Click
+    TabOrder = 19
+  end
+  object Button20: TButton
+    Left = 8
+    Height = 32
+    Top = 200
+    Width = 32
+    Caption = '1'
+    OnClick = Button0Click9
+    OnKeyPress = Button7KeyPress
+    TabOrder = 20
+  end
+  object Button21: TButton
+    Left = 48
+    Height = 32
+    Top = 200
+    Width = 32
+    Caption = '2'
+    OnClick = Button0Click9
+    OnKeyPress = Button7KeyPress
+    TabOrder = 21
+  end
+  object Button22: TButton
+    Left = 88
+    Height = 32
+    Top = 200
+    Width = 32
+    Caption = '3'
+    OnClick = Button0Click9
+    OnKeyPress = Button7KeyPress
+    TabOrder = 22
+  end
+  object Button23: TButton
+    Left = 128
+    Height = 32
+    Top = 208
+    Width = 32
+    Caption = '-'
+    OnClick = Button27Click
+    OnKeyPress = Button7KeyPress
+    TabOrder = 23
+  end
+  object Button24: TButton
+    Left = 168
+    Height = 72
+    Top = 200
+    Width = 32
+    Caption = '='
+    OnClick = Button24Click
+    OnKeyPress = Button7KeyPress
+    TabOrder = 24
+  end
+  object Button25: TButton
+    Left = 8
+    Height = 32
+    Top = 240
+    Width = 72
+    Caption = '0'
+    OnClick = Button0Click9
+    OnKeyPress = Button7KeyPress
+    TabOrder = 25
+  end
+  object Button26: TButton
+    Left = 88
+    Height = 32
+    Top = 240
+    Width = 32
+    Caption = ','
+    OnClick = Button26Click
+    OnKeyPress = Button7KeyPress
+    TabOrder = 26
+  end
+  object Button27: TButton
+    Left = 128
+    Height = 32
+    Top = 240
+    Width = 32
+    Caption = '+'
+    OnClick = Button27Click
+    OnKeyPress = Button7KeyPress
+    TabOrder = 27
+  end
+  object MainMenu1: TMainMenu
+    left = 8
+    object MenuItem1: TMenuItem
+      Caption = 'Вид'
+      object MenuItem3: TMenuItem
+        Caption = 'Инженерный'
+        OnClick = MenuItem3Click
+      end
+      object MenuItem4: TMenuItem
+        Caption = 'Программист'
+        OnClick = MenuItem4Click
+      end
+      object MenuItem5: TMenuItem
+        Caption = 'Обычный'
+        OnClick = MenuItem5Click
+      end
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'Справка'
+      object MenuItem6: TMenuItem
+        Caption = 'О программе'
+        OnClick = MenuItem6Click
+      end
+    end
+  end
+end
