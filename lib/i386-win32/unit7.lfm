@@ -1,0 +1,111 @@
+object Form7: TForm7
+  Left = 296
+  Height = 180
+  Top = 210
+  Width = 222
+  Caption = 'Программист'
+  ClientHeight = 160
+  ClientWidth = 222
+  Menu = MainMenu1
+  LCLVersion = '1.6.4.0'
+  object Button6: TButton
+    Left = 8
+    Height = 32
+    Top = 40
+    Width = 72
+    Caption = '←'
+    TabOrder = 0
+  end
+  object Edit1: TEdit
+    Left = 8
+    Height = 23
+    Top = 8
+    Width = 203
+    TabOrder = 1
+    Text = '0'
+  end
+  object Button25: TButton
+    Left = 8
+    Height = 32
+    Top = 120
+    Width = 72
+    Caption = '0'
+    TabOrder = 2
+  end
+  object Button20: TButton
+    Left = 8
+    Height = 32
+    Top = 80
+    Width = 32
+    Caption = '1'
+    TabOrder = 3
+  end
+  object Button4: TButton
+    Left = 136
+    Height = 32
+    Top = 120
+    Width = 75
+    Caption = 'Dec'
+    OnClick = Button2Click
+    TabOrder = 4
+  end
+  object Button3: TButton
+    Left = 136
+    Height = 32
+    Top = 80
+    Width = 75
+    Caption = 'Hex'
+    OnClick = Button2Click
+    TabOrder = 5
+  end
+  object Button2: TButton
+    Left = 136
+    Height = 32
+    Top = 40
+    Width = 75
+    Caption = 'Oct'
+    OnClick = Button2Click
+    TabOrder = 6
+  end
+  object Button26: TButton
+    Left = 88
+    Height = 32
+    Top = 80
+    Width = 32
+    Caption = ','
+    TabOrder = 7
+  end
+  object Button7: TButton
+    Left = 48
+    Height = 32
+    Top = 80
+    Width = 32
+    Caption = 'C'
+    TabOrder = 8
+  end
+  object MainMenu1: TMainMenu
+    top = 8
+    object MenuItem1: TMenuItem
+      Caption = 'Вид'
+      object MenuItem3: TMenuItem
+        Caption = 'Обычный'
+        OnClick = MenuItem3Click
+      end
+      object MenuItem4: TMenuItem
+        Caption = 'Инженер'
+        OnClick = MenuItem4Click
+      end
+      object MenuItem5: TMenuItem
+        Caption = 'Программист'
+        OnClick = MenuItem5Click
+      end
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'Справка'
+      object MenuItem6: TMenuItem
+        Caption = 'О программе'
+        OnClick = MenuItem6Click
+      end
+    end
+  end
+end
